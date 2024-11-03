@@ -5,4 +5,6 @@ services:
     ports:
       - '25565:25565'
     volumes:
-     - /own/stress_test:/minecraft
+      - /mcrun/McImages/default:/minecraft
+    environment:
+      - EULA=TRUE
