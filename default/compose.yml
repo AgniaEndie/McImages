@@ -3,4 +3,4 @@ services:
   stress_test:
     build: ./
     volumes:
-     - /own/stress_test:/
+     - /own/stress_test:/minecraft
