@@ -7,5 +7,5 @@ COPY ./eula.txt /minecraft
 COPY ./libraries /minecraft/libraries
 COPY ./server.properties /minecraft
 COPY ./ops.json /minecraft
-RUN ls -l
+WORKDIR /minecraft
 ENTRYPOINT ["java","-Xms4G","-Xmx8G" ,"-jar","minecraft-server.jar"]
