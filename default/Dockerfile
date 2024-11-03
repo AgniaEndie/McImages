@@ -8,4 +8,6 @@ COPY ./libraries /minecraft/libraries
 COPY ./server.properties /minecraft
 COPY ./ops.json /minecraft
 
+RUN ls
+
 ENTRYPOINT ["java","-Xms4G","-Xmx8G" ,"-jar","minecraft-server.jar"]
