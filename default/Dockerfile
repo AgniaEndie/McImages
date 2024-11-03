@@ -1,9 +1,9 @@
 FROM eclipse-temurin:21
 LABEL authors="AgniaEndie"
 
-WORKDIR /tmp
-COPY ./minecraft-server.jar /tmp
-COPY ./eula.txt /tmp
-COPY ./libraries /tmp/libraries
+WORKDIR /minecraft
+COPY ./minecraft-server.jar /minecraft
+COPY ./eula.txt /minecraft
+COPY ./libraries /minecraft/libraries
 
 ENTRYPOINT ["java","-Xms4G","-Xmx8G" ,"-jar","minecraft-server.jar"]
