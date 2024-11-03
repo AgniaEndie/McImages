@@ -2,5 +2,7 @@ version: "3"
 services:
   stress_test:
     build: ./
+    ports:
+      - '25565:25565'
     volumes:
      - /own/stress_test:/minecraft
